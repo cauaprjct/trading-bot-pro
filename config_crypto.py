@@ -89,8 +89,8 @@ USE_VOLUME_FILTER = False
 STATE_FILE = "bot_state_crypto.json"
 
 # --- Telegram ---
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8398006198:AAF9Ss9DW9t7Xp-fKH2QEXO7LsL5enRzWdE")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-5153173676")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
 # --- Filtros ---
 USE_NEWS_FILTER = False

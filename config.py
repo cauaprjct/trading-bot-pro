@@ -72,8 +72,8 @@ STATE_FILE = "bot_state.json"  # Arquivo para salvar estado do bot
 # 3. Inicie uma conversa com seu bot e envie /start
 # 4. Acesse: https://api.telegram.org/bot<SEU_TOKEN>/getUpdates
 # 5. Copie o chat_id da resposta
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8398006198:AAF9Ss9DW9t7Xp-fKH2QEXO7LsL5enRzWdE")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-5153173676")  # Grupo tradertwo
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")  # Grupo tradertwo
 
 # --- Filtro de Notícias ---
 USE_NEWS_FILTER = True           # Ativa/desativa filtro de notícias
