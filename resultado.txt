@@ -1,0 +1,467 @@
+PS C:\Users\ngb\Desktop\trader\b3_trading_bot> python train_all_models.py
+============================================================
+🤖 TREINAMENTO DE MODELOS ML - MULTI-ATIVO
+============================================================
+
+============================================================
+🤖 TREINAMENTO DO MODELO ML - Trading Bot PRO
+============================================================
+✅ LightGBM instalado
+✅ Scikit-learn instalado
+
+
+============================================================
+📊 Treinando modelo para GBPUSD...
+============================================================
+   📂 M5_2025-07.csv: 3,003 candles
+   📂 M5_2025-08.csv: 6,046 candles
+   📂 M5_2025-09.csv: 6,330 candles
+   📂 M5_2025-10.csv: 6,585 candles
+   📂 M5_2025-11.csv: 5,760 candles
+   📂 M5_2025-12.csv: 6,336 candles
+   📂 M5_2026-01.csv: 2,181 candles
+
+📊 Total: 36,241 candles
+📅 Período: 2025-07-17 13:45:00 até 2026-01-13 13:40:00
+
+🔧 Calculando indicadores...
+✅ Indicadores calculados!
+
+🎯 Gerando labels (simulando trades com trailing stop)...
+✅ Labels gerados: 27,897 amostras
+   🟢 Wins: 10,615 (38.1%)   
+   🔴 Losses: 17,282 (61.9%)
+
+📦 Dataset preparado: 27,845 amostras x 14 features
+
+🚀 Treinando modelo LightGBM...
+   Treino: 22,276 | Teste: 5,569
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+
+📊 Métricas no conjunto de teste:
+   Accuracy:  62.1%
+   Precision: 51.8%
+   Recall:    5.5%
+   F1 Score:  10.0%
+
+🔍 Importância das Features:
+   adx: 1397.000
+   rsi: 1349.000
+   macd_histogram: 1272.000
+   atr_percentile: 1034.000
+   volume_above_avg: 150.000
+
+🎯 Threshold ótimo: 40% (F1: 40.9%)
+
+💾 Modelo salvo: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\gbpusd_lgbm.pkl       
+   Tamanho: 0.65 MB
+
+============================================================
+✅ TREINO CONCLUÍDO COM SUCESSO!
+============================================================
+
+📁 Modelo salvo em: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\gbpusd_lgbm.pkl    
+🎯 Use threshold: 40%
+
+💡 Para usar no bot, adicione no config:
+   USE_ML_FILTER = True
+   ML_MODEL_PATH = 'C:\Users\ngb\Desktop\trader\b3_trading_bot\models\gbpusd_lgbm.pkl'   
+   ML_CONFIDENCE_THRESHOLD = 0.4
+✅ GBPUSD: Modelo salvo!
+
+============================================================
+📊 Treinando modelo para EURUSD...
+============================================================
+   📂 M5_2025-07.csv: 3,003 candles
+   📂 M5_2025-08.csv: 6,046 candles
+   📂 M5_2025-09.csv: 6,329 candles
+   📂 M5_2025-10.csv: 6,585 candles
+   📂 M5_2025-11.csv: 5,760 candles
+   📂 M5_2025-12.csv: 6,304 candles
+   📂 M5_2026-01.csv: 2,181 candles
+
+📊 Total: 36,208 candles
+📅 Período: 2025-07-17 13:45:00 até 2026-01-13 13:40:00
+
+🔧 Calculando indicadores...
+✅ Indicadores calculados!
+
+🎯 Gerando labels (simulando trades com trailing stop)...
+✅ Labels gerados: 28,053 amostras
+   🟢 Wins: 10,481 (37.4%)
+   🔴 Losses: 17,572 (62.6%)
+
+📦 Dataset preparado: 28,003 amostras x 14 features
+
+🚀 Treinando modelo LightGBM...
+   Treino: 22,402 | Teste: 5,601
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+
+📊 Métricas no conjunto de teste:
+   Accuracy:  62.7%
+   Precision: 50.8%
+   Recall:    4.3%
+   F1 Score:  8.0%
+
+🔍 Importância das Features:
+   adx: 1392.000
+   macd_histogram: 1327.000
+   atr_percentile: 1224.000
+   rsi: 1165.000
+   market_structure: 118.000
+
+🎯 Threshold ótimo: 40% (F1: 35.5%)
+
+💾 Modelo salvo: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\eurusd_lgbm.pkl       
+   Tamanho: 0.65 MB
+
+============================================================
+✅ TREINO CONCLUÍDO COM SUCESSO!
+============================================================
+
+📁 Modelo salvo em: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\eurusd_lgbm.pkl    
+🎯 Use threshold: 40%
+
+💡 Para usar no bot, adicione no config:
+   USE_ML_FILTER = True
+   ML_MODEL_PATH = 'C:\Users\ngb\Desktop\trader\b3_trading_bot\models\eurusd_lgbm.pkl'   
+   ML_CONFIDENCE_THRESHOLD = 0.4
+✅ EURUSD: Modelo salvo!
+
+============================================================
+📊 Treinando modelo para USDCAD...
+============================================================
+   📂 M5_2025-07.csv: 3,003 candles
+   📂 M5_2025-08.csv: 6,046 candles
+   📂 M5_2025-09.csv: 6,330 candles
+   📂 M5_2025-10.csv: 6,586 candles
+   📂 M5_2025-11.csv: 5,760 candles
+   📂 M5_2025-12.csv: 6,336 candles
+   📂 M5_2026-01.csv: 2,181 candles
+
+📊 Total: 36,242 candles
+📅 Período: 2025-07-17 13:45:00 até 2026-01-13 13:40:00
+
+🔧 Calculando indicadores...
+✅ Indicadores calculados!
+
+🎯 Gerando labels (simulando trades com trailing stop)...
+✅ Labels gerados: 28,037 amostras
+   🟢 Wins: 10,924 (39.0%)
+   🔴 Losses: 17,113 (61.0%)
+
+📦 Dataset preparado: 27,978 amostras x 14 features
+
+🚀 Treinando modelo LightGBM...
+   Treino: 22,382 | Teste: 5,596
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+
+📊 Métricas no conjunto de teste:
+   Accuracy:  60.9%
+   Precision: 48.6%
+   Recall:    6.4%
+   F1 Score:  11.3%
+
+🔍 Importância das Features:
+   adx: 1321.000
+   atr_percentile: 1278.000
+   macd_histogram: 1179.000
+   rsi: 1170.000
+   sma_crossover: 148.000
+
+🎯 Threshold ótimo: 40% (F1: 42.9%)
+
+💾 Modelo salvo: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\usdcad_lgbm.pkl       
+   Tamanho: 0.64 MB
+
+============================================================
+✅ TREINO CONCLUÍDO COM SUCESSO!
+============================================================
+
+📁 Modelo salvo em: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\usdcad_lgbm.pkl    
+🎯 Use threshold: 40%
+
+💡 Para usar no bot, adicione no config:
+   USE_ML_FILTER = True
+   ML_MODEL_PATH = 'C:\Users\ngb\Desktop\trader\b3_trading_bot\models\usdcad_lgbm.pkl'   
+   ML_CONFIDENCE_THRESHOLD = 0.4
+✅ USDCAD: Modelo salvo!
+
+============================================================
+📊 Treinando modelo para USDJPY...
+============================================================
+   📂 M5_2025-07.csv: 3,003 candles
+   📂 M5_2025-08.csv: 6,046 candles
+   📂 M5_2025-09.csv: 6,329 candles
+   📂 M5_2025-10.csv: 6,585 candles
+   📂 M5_2025-11.csv: 5,760 candles
+   📂 M5_2025-12.csv: 6,336 candles
+   📂 M5_2026-01.csv: 2,181 candles
+
+📊 Total: 36,240 candles
+📅 Período: 2025-07-17 13:45:00 até 2026-01-13 13:40:00
+
+🔧 Calculando indicadores...
+✅ Indicadores calculados!
+
+🎯 Gerando labels (simulando trades com trailing stop)...
+✅ Labels gerados: 27,335 amostras
+   🟢 Wins: 10,683 (39.1%)
+   🔴 Losses: 16,652 (60.9%)
+
+📦 Dataset preparado: 27,288 amostras x 14 features
+
+🚀 Treinando modelo LightGBM...
+   Treino: 21,830 | Teste: 5,458
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+
+📊 Métricas no conjunto de teste:
+   Accuracy:  61.1%
+   Precision: 52.0%
+   Recall:    5.4%
+   F1 Score:  9.9%
+
+🔍 Importância das Features:
+   adx: 1482.000
+   macd_histogram: 1234.000
+   rsi: 1123.000
+   atr_percentile: 1035.000
+   sma_crossover: 135.000
+
+🎯 Threshold ótimo: 40% (F1: 45.2%)
+
+💾 Modelo salvo: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\usdjpy_lgbm.pkl       
+   Tamanho: 0.62 MB
+
+============================================================
+✅ TREINO CONCLUÍDO COM SUCESSO!
+============================================================
+
+📁 Modelo salvo em: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\usdjpy_lgbm.pkl    
+🎯 Use threshold: 40%
+
+💡 Para usar no bot, adicione no config:
+   USE_ML_FILTER = True
+   ML_MODEL_PATH = 'C:\Users\ngb\Desktop\trader\b3_trading_bot\models\usdjpy_lgbm.pkl'   
+   ML_CONFIDENCE_THRESHOLD = 0.4
+✅ USDJPY: Modelo salvo!
+
+============================================================
+📊 Treinando modelo para EURJPY...
+============================================================
+   📂 M5_2025-07.csv: 3,003 candles
+   📂 M5_2025-08.csv: 6,046 candles
+   📂 M5_2025-09.csv: 6,330 candles
+   📂 M5_2025-10.csv: 6,586 candles
+   📂 M5_2025-11.csv: 5,760 candles
+   📂 M5_2025-12.csv: 6,336 candles
+   📂 M5_2026-01.csv: 2,181 candles
+
+📊 Total: 36,242 candles
+📅 Período: 2025-07-17 13:45:00 até 2026-01-13 13:40:00
+
+🔧 Calculando indicadores...
+✅ Indicadores calculados!
+
+🎯 Gerando labels (simulando trades com trailing stop)...
+✅ Labels gerados: 28,189 amostras
+   🟢 Wins: 10,566 (37.5%)
+   🔴 Losses: 17,623 (62.5%)
+
+📦 Dataset preparado: 28,137 amostras x 14 features
+
+🚀 Treinando modelo LightGBM...
+   Treino: 22,509 | Teste: 5,628
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+
+📊 Métricas no conjunto de teste:
+   Accuracy:  62.3%
+   Precision: 47.3%
+   Recall:    4.5%
+   F1 Score:  8.3%
+
+🔍 Importância das Features:
+   adx: 1471.000
+   rsi: 1260.000
+   atr_percentile: 1232.000
+   macd_histogram: 1222.000
+   volume_above_avg: 124.000
+
+🎯 Threshold ótimo: 40% (F1: 40.5%)
+
+💾 Modelo salvo: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\eurjpy_lgbm.pkl       
+   Tamanho: 0.66 MB
+
+============================================================
+✅ TREINO CONCLUÍDO COM SUCESSO!
+============================================================
+
+📁 Modelo salvo em: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\eurjpy_lgbm.pkl    
+🎯 Use threshold: 40%
+
+💡 Para usar no bot, adicione no config:
+   USE_ML_FILTER = True
+   ML_MODEL_PATH = 'C:\Users\ngb\Desktop\trader\b3_trading_bot\models\eurjpy_lgbm.pkl'   
+   ML_CONFIDENCE_THRESHOLD = 0.4
+✅ EURJPY: Modelo salvo!
+
+============================================================
+📊 Treinando modelo para GBPJPY...
+============================================================
+   📂 M5_2025-07.csv: 3,003 candles
+   📂 M5_2025-08.csv: 6,045 candles
+   📂 M5_2025-09.csv: 6,329 candles
+   📂 M5_2025-10.csv: 6,587 candles
+   📂 M5_2025-11.csv: 5,760 candles
+   📂 M5_2025-12.csv: 6,333 candles
+   📂 M5_2026-01.csv: 2,181 candles
+
+📊 Total: 36,238 candles
+📅 Período: 2025-07-17 13:45:00 até 2026-01-13 13:40:00
+
+🔧 Calculando indicadores...
+✅ Indicadores calculados!
+
+🎯 Gerando labels (simulando trades com trailing stop)...
+✅ Labels gerados: 28,342 amostras
+   🟢 Wins: 10,236 (36.1%)
+   🔴 Losses: 18,106 (63.9%)
+
+📦 Dataset preparado: 28,295 amostras x 14 features
+
+🚀 Treinando modelo LightGBM...
+   Treino: 22,636 | Teste: 5,659
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+
+📊 Métricas no conjunto de teste:
+   Accuracy:  63.9%
+   Precision: 51.1%
+   Recall:    4.4%
+   F1 Score:  8.0%
+
+🔍 Importância das Features:
+   adx: 1528.000
+   macd_histogram: 1224.000
+   rsi: 1200.000
+   atr_percentile: 1166.000
+   volume_above_avg: 153.000
+
+🎯 Threshold ótimo: 40% (F1: 33.4%)
+
+💾 Modelo salvo: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\gbpjpy_lgbm.pkl       
+   Tamanho: 0.65 MB
+
+============================================================
+✅ TREINO CONCLUÍDO COM SUCESSO!
+============================================================
+
+📁 Modelo salvo em: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\gbpjpy_lgbm.pkl    
+🎯 Use threshold: 40%
+
+💡 Para usar no bot, adicione no config:
+   USE_ML_FILTER = True
+   ML_MODEL_PATH = 'C:\Users\ngb\Desktop\trader\b3_trading_bot\models\gbpjpy_lgbm.pkl'   
+   ML_CONFIDENCE_THRESHOLD = 0.4
+✅ GBPJPY: Modelo salvo!
+
+============================================================
+📊 Treinando modelo para AUDUSD...
+============================================================
+   📂 M5_2025-07.csv: 3,003 candles
+   📂 M5_2025-08.csv: 6,046 candles
+   📂 M5_2025-09.csv: 6,330 candles
+   📂 M5_2025-10.csv: 6,586 candles
+   📂 M5_2025-11.csv: 5,760 candles
+   📂 M5_2025-12.csv: 6,336 candles
+   📂 M5_2026-01.csv: 2,181 candles
+
+📊 Total: 36,242 candles
+📅 Período: 2025-07-17 13:45:00 até 2026-01-13 13:40:00
+
+🔧 Calculando indicadores...
+✅ Indicadores calculados!
+
+🎯 Gerando labels (simulando trades com trailing stop)...
+✅ Labels gerados: 28,105 amostras
+   🟢 Wins: 10,745 (38.2%)
+   🔴 Losses: 17,360 (61.8%)
+
+📦 Dataset preparado: 28,061 amostras x 14 features
+
+🚀 Treinando modelo LightGBM...
+   Treino: 22,448 | Teste: 5,613
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\ngb\AppData\Roaming\Python\Python314\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+
+📊 Métricas no conjunto de teste:
+   Accuracy:  62.2%
+   Precision: 57.2%
+   Recall:    4.6%
+   F1 Score:  8.5%
+
+🔍 Importância das Features:
+   adx: 1407.000
+   macd_histogram: 1304.000
+   rsi: 1256.000
+   atr_percentile: 1135.000
+   in_order_block: 137.000
+
+🎯 Threshold ótimo: 40% (F1: 42.5%)
+
+💾 Modelo salvo: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\audusd_lgbm.pkl       
+   Tamanho: 0.65 MB
+
+============================================================
+✅ TREINO CONCLUÍDO COM SUCESSO!
+============================================================
+
+📁 Modelo salvo em: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\audusd_lgbm.pkl    
+🎯 Use threshold: 40%
+
+💡 Para usar no bot, adicione no config:
+   USE_ML_FILTER = True
+   ML_MODEL_PATH = 'C:\Users\ngb\Desktop\trader\b3_trading_bot\models\audusd_lgbm.pkl'   
+   ML_CONFIDENCE_THRESHOLD = 0.4
+✅ AUDUSD: Modelo salvo!
+
+============================================================
+📊 RESUMO DO TREINAMENTO
+============================================================
+
+✅ Sucesso: 7 modelos
+❌ Falha: 0 modelos
+
+📁 Modelos criados:
+  GBPUSD: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\gbpusd_lgbm.pkl
+  EURUSD: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\eurusd_lgbm.pkl
+  USDCAD: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\usdcad_lgbm.pkl
+  USDJPY: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\usdjpy_lgbm.pkl
+  EURJPY: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\eurjpy_lgbm.pkl
+  GBPJPY: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\gbpjpy_lgbm.pkl
+  AUDUSD: C:\Users\ngb\Desktop\trader\b3_trading_bot\models\audusd_lgbm.pkl
+
+============================================================
+✅ Treinamento concluído!
+   Agora rode: python run_multi.py
+============================================================
+PS C:\Users\ngb\Desktop\trader\b3_trading_bot> 

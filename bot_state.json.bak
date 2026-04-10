@@ -1,0 +1,80 @@
+{
+  "last_updated": "2026-01-13T09:48:15.489836",
+  "open_positions": [
+    54655108669
+  ],
+  "last_trade_time": 1768306658.7841403,
+  "last_trade_ticket": 54655108669,
+  "trades_history": [
+    {
+      "ticket": 1213272534,
+      "symbol": "EURUSD-T",
+      "type": "BUY",
+      "volume": 0.1,
+      "entry_price": 1.16851,
+      "exit_price": 1.16892,
+      "pnl": 4.1,
+      "commission": 0.0,
+      "swap": 0.0,
+      "exit_time": "2026-01-06T18:57:33",
+      "recorded_at": "2026-01-06T21:34:51.113364"
+    },
+    {
+      "ticket": 1213283208,
+      "symbol": "EURUSD-T",
+      "type": "SELL",
+      "volume": 0.1,
+      "entry_price": 1.16906,
+      "exit_price": 1.17008,
+      "pnl": -10.2,
+      "commission": 0.0,
+      "swap": 0.0,
+      "exit_time": "2026-01-07T00:54:26",
+      "recorded_at": "2026-01-07T09:06:01.496289"
+    },
+    {
+      "symbol": "EURUSD",
+      "ticket": 54646084983,
+      "pnl": 3.5,
+      "type": "smart_exit",
+      "reason": "✅ Lucro de $3.50 >= mínimo $0.50",
+      "recorded_at": "2026-01-12T17:45:53.364657"
+    },
+    {
+      "symbol": "EURUSD",
+      "ticket": 54646882592,
+      "pnl": 0.14,
+      "type": "smart_exit",
+      "reason": "🔄 Recuperação! Estava negativo, agora $0.14",
+      "recorded_at": "2026-01-12T18:22:43.504719"
+    },
+    {
+      "ticket": 54647003852,
+      "symbol": "EURUSD",
+      "type": "BUY",
+      "volume": 0.14,
+      "entry_price": 1.16676,
+      "exit_price": 1.16677,
+      "pnl": 0.04000000000000001,
+      "commission": 0.0,
+      "swap": -0.1,
+      "exit_time": "2026-01-12T21:12:18",
+      "recorded_at": "2026-01-13T07:27:24.621369"
+    },
+    {
+      "symbol": "EURUSD",
+      "ticket": 54655108669,
+      "pnl": -11.48,
+      "type": "smart_exit",
+      "reason": "🚨 EMERGÊNCIA: Perda de 31.0% do capital!",
+      "recorded_at": "2026-01-13T09:48:15.489783"
+    }
+  ],
+  "daily_stats": {
+    "date": "2026-01-13",
+    "trades_count": 4,
+    "wins": 1,
+    "losses": 1,
+    "pnl": -11.440000000000001
+  }
+}

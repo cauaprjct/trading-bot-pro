@@ -1,0 +1,27 @@
+{
+  "last_updated": "2026-01-13T21:00:35.796543",
+  "open_positions": [],
+  "last_trade_time": 0,
+  "last_trade_ticket": 54663632093,
+  "trades_history": [
+    {
+      "ticket": 54663680676,
+      "pnl": -10.19,
+      "closed_externally": true,
+      "recorded_at": "2026-01-13T21:00:35.793464"
+    },
+    {
+      "ticket": 54663632093,
+      "pnl": -10.19,
+      "closed_externally": true,
+      "recorded_at": "2026-01-13T21:00:35.796517"
+    }
+  ],
+  "daily_stats": {
+    "date": "2026-01-13",
+    "trades_count": 4,
+    "wins": 0,
+    "losses": 2,
+    "pnl": -20.38
+  }
+}
